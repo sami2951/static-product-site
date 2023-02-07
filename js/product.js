@@ -4,13 +4,18 @@ fetch("https://kea-alt-del.dk/t7/api/products/1528")
 
 function showProduct(product){
 console.log(product);
-document.querySelector(".productName").textContent = product.productdisplayname;
+document.querySelectorAll(".productName").forEach(setName)
+function setName(oneElementAtATime){
+    oneElementAtATime.textContent = product.productdisplayname;
+}
+
+
 document.querySelector(".productPrice").textContent = "DKK "+product.price;
 document.querySelector(".productColor").textContent = product.colour1;
 document.querySelector(".productNumber").textContent = product.id;
 document.querySelector(".productImg").src=`https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`
 document.querySelector(".brandName").textContent = product.brandname;
-//document.querySelector(".productDescription").textContent = product.description;
+document.querySelector(".productDescription").innerHTML = product.description;
 }
 
 /*	
