@@ -8,32 +8,35 @@
     <title>Product</title>
   </head>
   <body>
-    <div class="grid_1-1-1-1">
-      <div class="section"><h1>Shop</h1></div>
-      <div class="section"></div>
-
-      <div class="section"></div>
+    <div class="grid_1-1">
+      <div><img class="logo" src="svg/logo navn.svg" alt="Logo" /></div>
       <div class="menu">
-        <a href="index.html">Forside</a>
-        <a href="productlist.html">Productlist</a>
-        <a href="category.html">Categories</a>
+        <ul>
+          <li><a href="index.html">Forside</a><br /></li>
+          <li><a href="productlist.html">Productlist</a><br /></li>
+          <li><a href="category.html">Categories</a></li>
+        </ul>
       </div>
     </div>
     <div class="rejse">
-      <a href="index.html">Shop</a> /
-      <a href="productlist.html">Produktliste</a> /
-      <a href="category.html">Product</a>
-    </div>
+      <a href="index.html">KEAButique</a> >
+      <a href="productlist.html">Produktliste</a> >
+      <a href="category.html">Product</a> >
+      <!--
+        <a class="productName">Produktnavn</a>
+    --></div>
     <div class="grid_1-1">
       <div class="section">
         <img
+          class="productImg"
           src="https://kea-alt-del.dk/t7/images/webp/1000/1163.webp"
           alt="T-shirt"
         />
       </div>
-      <div class="section">
-        <h2>Sahara Team India Fanwear Round Neck Jersey</h2>
-        <p>895,-</p>
+      <div class="productSection">
+        <p class="brandName">Brand</p>
+        <h3 class="productName">Produktnavn</h3>
+        <p class="productPrice">Price</p>
         <h2>Farve</h2>
         <select name="color" id="color">
           <option>Multicolor</option>
@@ -55,11 +58,12 @@
     <div class="productInfo">
       <h2>Product information</h2>
       <h3>Model name</h3>
-      <p>Sahara Team India Fanwear Round Neck Jersey</p>
+      <p class="productName">Produktnavn</p>
       <h3>Color</h3>
-      <p>Blue</p>
+      <p class="productColor">Blue</p>
       <h3>Inventory number</h3>
-      <p>1163</p>
+      <p class="productNumber">1163</p>
     </div>
+    <script src="js/product.js"></script>
   </body>
 </html>
