@@ -15,20 +15,15 @@ background-color: rgb(250, 250, 250);
     margin:20px;
 }
 
-.knap{
-
-    border-color: #e7e7e7;
-    color: black;
-  }
-
   .btn {
-    border: 3px solid black;
+    border: 2px solid black;
     background-color: white;
     color: black;
     padding: 2px 28px;
-    font-size:15px;
+    font-size:13px;
     cursor: pointer;
     margin-top:30px;
+    border-radius: 30px;
   }
   
   .default:hover {
@@ -133,7 +128,7 @@ font-size: x-large;
 }
 
 h3.productName{
-    font-size: 40px;
+    font-size: 28px;
     
 }
 
